@@ -1717,6 +1717,20 @@ display: none;
 }
 
 /* CUSTOM STYLES */
+
+.pv-image{
+    width: inherit;
+    height: inherit;
+}
+
+.pv-image:hover{
+    -webkit-transition: all ease-in-out .3s;
+    -webkit-filter: blur(2px);
+}
+
+.pv-header{
+}
+
 .pv-title {
     position: relative;
     bottom: -85%;
