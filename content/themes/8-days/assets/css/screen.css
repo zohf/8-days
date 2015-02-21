@@ -1716,7 +1716,21 @@ display: none;
 
 }
 
+/* CUSTOM STYLES */
+.pv-title {
+    position: relative;
+    bottom: -85%;
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
 
+.pv-title a {
+    color: white;
+}
+
+.pv-title a:hover {
+    color: #FAFAFA;
+}
 /* ==========================================================================
  12. Animations
  ========================================================================== */
