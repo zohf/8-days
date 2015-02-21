@@ -1112,7 +1112,9 @@ define('ghost/templates/posts', ['exports'], function(__exports__){ __exports__[
   data.buffer.push(escapeExpression(helpers.unbound.call(depth0, "post.model.published_at", {"name":"unbound","hash":{},"hashTypes":{},"hashContexts":{},"types":["ID"],"contexts":[depth0],"data":data})));
   data.buffer.push("\" class=\"date published\">\n                                        Published ");
   data.buffer.push(escapeExpression(((helpers['gh-format-timeago'] || (depth0 && depth0['gh-format-timeago']) || helperMissing).call(depth0, "post.model.published_at", {"name":"gh-format-timeago","hash":{},"hashTypes":{},"hashContexts":{},"types":["ID"],"contexts":[depth0],"data":data}))));
-  data.buffer.push("\n                                    </time>\n");
+  data.buffer.push("\n                                    </time> by <span class=\"author\">");
+  data.buffer.push(escapeExpression(helpers.unbound.call(depth0, "post.model.author.name", {"name":"_triageMustache","hash":{},"hashTypes":{},"hashContexts":{},"types":["ID"],"contexts":[depth0],"data":data})));
+  data.buffer.push("</span>");
   return buffer;
 },"11":function(depth0,helpers,partials,data) {
   data.buffer.push("                                <span class=\"draft\">Draft</span>\n");

@@ -5,24 +5,26 @@
 
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
-<article class="{{post_class}}">
+<article class="{{post_class}} level-1">
     <header class="post-header pv-header">
         <div class="pv-image"
              style="width:auto;height:400px;background:{{#if image}}url({{image}}){{else}}#ccc{{/if}};background-size:cover;">
-            <h2 class="post-title pv-title"><a href="{{url}}">{{{title}}}</a></h2>
         </div>
     </header>
-    <section class="post-excerpt">
-        <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-    </section>
-    <footer class="post-meta">
-        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
-        {{author}}
-        {{tags prefix=" on "}}
-        <!--
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-        -->
-    </footer>
+    <div class="pv-content">
+        <h2 class="post-title pv-title"><a href="{{url}}">{{{title}}}</a></h2>
+        <section class="post-excerpt">
+            <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+        </section>
+        <footer class="post-meta">
+            {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
+            {{author}}
+            {{tags prefix=" on "}}
+            <!--
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+            -->
+        </footer>
+    </div>
 </article>
 {{/foreach}}
 

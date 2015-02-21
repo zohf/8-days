@@ -4469,7 +4469,7 @@ body.settings-menu-expanded .content-cover {
     /* line 162, /Users/hannah/Ghost/Ghost-Release/release/core/client/assets/sass/layouts/content */
     .content-list li a {
       display: block;
-      padding: 20px 20px;
+      padding: 10px 20px;
       color: rgba(0, 0, 0, 0.5); }
       /* line 80, /Users/hannah/Ghost/Ghost-Release/release/core/client/assets/sass/modules/icons */
       .content-list li a:after {
