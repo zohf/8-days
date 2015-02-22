@@ -15,6 +15,23 @@ $row-margin: 25px !default;
     clear: both;
   }
 
+  //75%
+  .m-row__three-quarter {
+    width: calc(75% - (#{$column-margin} / 2));
+    float: left;
+    @media (max-width: $break_medium) {
+      float: none;
+      width: 100%;
+    }
+    @media (min-width: $break_medium) {
+      margin-right: $column-margin / 2;
+      &.last {
+        margin-left: $column-margin / 2;
+        margin-right: 0;
+      }
+    }
+  }
+
   //50%
   .m-row__half {
     width: calc(50% - (#{$column-margin} / 2));

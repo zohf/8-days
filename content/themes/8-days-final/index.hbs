@@ -6,6 +6,19 @@
     <a href="#" class="m-lede__logo">8 Days in Cuba</a>
     <nav></nav>
     <div class="m-lede__featured">
+      <div class="m-lede__main">
+        <h1><a href="#">Cuba. The Time is Now: A People to People Experience</a></h1>
+      </div>
+      <div class="m-lede__5">
+        <ul>
+          <li class="eyebrow">5 Things</li>
+          <li><a href="#">This is a 5 things headline things headline</a></li>
+          <li><a href="#">This is a 5 things headline</a></li>
+          <li><a href="#">This is a 5 things headline things headline things headline</a></li>
+          <li><a href="#">This is a 5 things headline things headline</a></li>
+          <li><a href="#">This is a 5 things headline things headline things headline</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </header>
@@ -20,6 +33,7 @@
 <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
   <nav class="main-nav overlay clearfix">
     {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+    <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
   </nav>
   <div class="vertical">
     <div class="main-header-content inner">
@@ -27,6 +41,7 @@
       <h2 class="page-description">{{@blog.description}}</h2>
     </div>
   </div>
+  <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 
 {{! The main content area on the homepage }}
