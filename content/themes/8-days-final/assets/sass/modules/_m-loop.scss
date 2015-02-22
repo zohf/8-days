@@ -1,0 +1,9 @@
+$m : '.m-loop';
+
+#{$m} {
+  max-width: $max-width;
+  margin: 0 auto;
+  .m-blog-post-content {
+    margin-top: 10px;
+  }
+}
