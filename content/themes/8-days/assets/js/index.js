@@ -59,6 +59,10 @@
 
         $(".scroll-down").arctic_scroll();
 
+        $(".pv-image").click(function(){
+            window.location.href = this.attr("data-link");
+        });
+
     });
 
     // smartresize
