@@ -54,5 +54,15 @@
     {{/has}}
 {{/foreach}}
 
+
+{{#foreach posts}}
+
+{{#if @index}}
+<p>{{@index}} : {{title}} : {{post_class}}</p>
+{{/if}}
+
+{{/foreach}}
+
+
 {{! Previous/next page links - displayed on every page }}
 {{pagination}}
