@@ -5,6 +5,7 @@ $m : '.m-lede';
   position: relative;
   background-repeat: no-repeat;
   background-position: bottom center;
+  margin-bottom: 40px;
   &:before {
     content: "";
     @include background-image(linear-gradient(rgba($secondary, 0.2), rgba($secondary, 0.65)));

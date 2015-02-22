@@ -3,7 +3,12 @@ $m : '.m-loop';
 #{$m} {
   max-width: $max-width;
   margin: 0 auto;
-  .m-blog-post-content {
+  padding: 15px;
+  @media (max-width: $break_large) {
+
+  }
+  .m-blog-post-content,
+  .m-gallery-post-content {
     margin-top: 10px;
   }
 }
