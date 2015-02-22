@@ -22,6 +22,7 @@
   .m-row .m-row__three-quarter {
     float: none;
     width: 100%;
+    margin-bottom: 35px;
   }
 }
 @media (min-width: 800px) {
@@ -29,112 +30,116 @@
   .m-row .m-row__three-quarter {
     margin-right: 12.5px;
   }
-  /* line 28, ../sass/modules/_m-row.scss */
+  /* line 29, ../sass/modules/_m-row.scss */
   .m-row .m-row__three-quarter.last {
     margin-left: 12.5px;
     margin-right: 0;
   }
 }
-/* line 36, ../sass/modules/_m-row.scss */
+/* line 37, ../sass/modules/_m-row.scss */
 .m-row .m-row__half {
   width: calc(50% - (25px / 2));
   float: left;
 }
 @media (max-width: 800px) {
-  /* line 36, ../sass/modules/_m-row.scss */
+  /* line 37, ../sass/modules/_m-row.scss */
   .m-row .m-row__half {
     float: none;
     width: 100%;
+    margin-bottom: 35px;
   }
 }
 @media (min-width: 800px) {
-  /* line 36, ../sass/modules/_m-row.scss */
+  /* line 37, ../sass/modules/_m-row.scss */
   .m-row .m-row__half {
     margin-right: 12.5px;
   }
-  /* line 45, ../sass/modules/_m-row.scss */
+  /* line 47, ../sass/modules/_m-row.scss */
   .m-row .m-row__half:last-child, .m-row .m-row__half.last {
     margin-left: 12.5px;
     margin-right: 0;
   }
 }
-/* line 54, ../sass/modules/_m-row.scss */
+/* line 56, ../sass/modules/_m-row.scss */
 .m-row .m-row__third {
   width: calc(33.33% - ((25px * 2) / 3));
   float: left;
 }
 @media (max-width: 800px) {
-  /* line 54, ../sass/modules/_m-row.scss */
+  /* line 56, ../sass/modules/_m-row.scss */
   .m-row .m-row__third {
     float: none;
     width: 100%;
+    margin-bottom: 35px;
   }
 }
 @media (min-width: 800px) {
-  /* line 54, ../sass/modules/_m-row.scss */
+  /* line 56, ../sass/modules/_m-row.scss */
   .m-row .m-row__third {
     margin-right: 12.5px;
     margin-left: 12.5px;
   }
-  /* line 64, ../sass/modules/_m-row.scss */
+  /* line 67, ../sass/modules/_m-row.scss */
   .m-row .m-row__third:first-child {
     margin-left: 0;
   }
-  /* line 67, ../sass/modules/_m-row.scss */
+  /* line 70, ../sass/modules/_m-row.scss */
   .m-row .m-row__third:last-child, .m-row .m-row__third.last {
     margin-right: 0;
   }
 }
-/* line 75, ../sass/modules/_m-row.scss */
+/* line 78, ../sass/modules/_m-row.scss */
 .m-row .m-row__quarter {
   width: calc(25% - ((25px * 3) / 4));
   float: left;
 }
 @media (max-width: 800px) {
-  /* line 75, ../sass/modules/_m-row.scss */
+  /* line 78, ../sass/modules/_m-row.scss */
   .m-row .m-row__quarter {
     float: none;
     width: 100%;
+    margin-bottom: 35px;
   }
 }
 @media (min-width: 800px) {
-  /* line 75, ../sass/modules/_m-row.scss */
+  /* line 78, ../sass/modules/_m-row.scss */
   .m-row .m-row__quarter {
     margin-right: 12.5px;
     margin-left: 12.5px;
   }
-  /* line 85, ../sass/modules/_m-row.scss */
+  /* line 89, ../sass/modules/_m-row.scss */
   .m-row .m-row__quarter:first-child {
     margin-left: 0;
   }
-  /* line 88, ../sass/modules/_m-row.scss */
+  /* line 92, ../sass/modules/_m-row.scss */
   .m-row .m-row__quarter:last-child, .m-row .m-row__quarter.last {
     margin-right: 0;
   }
 }
-/* line 96, ../sass/modules/_m-row.scss */
+/* line 100, ../sass/modules/_m-row.scss */
 .m-row .m-row__fifth {
   width: calc(20% - ((25px * 4) / 5));
   float: left;
 }
 @media (max-width: 800px) {
-  /* line 96, ../sass/modules/_m-row.scss */
+  /* line 100, ../sass/modules/_m-row.scss */
   .m-row .m-row__fifth {
     float: none;
     width: 100%;
+    margin-bottom: 35px;
   }
 }
 @media (min-width: 800px) {
-  /* line 96, ../sass/modules/_m-row.scss */
+  /* line 100, ../sass/modules/_m-row.scss */
   .m-row .m-row__fifth {
     margin-right: 12.5px;
     margin-left: 12.5px;
   }
-  /* line 106, ../sass/modules/_m-row.scss */
+  /* line 111, ../sass/modules/_m-row.scss */
   .m-row .m-row__fifth:first-child {
     margin-left: 0;
   }
-  /* line 109, ../sass/modules/_m-row.scss */
+  /* line 114, ../sass/modules/_m-row.scss */
   .m-row .m-row__fifth:last-child, .m-row .m-row__fifth.last {
     margin-right: 0;
   }
@@ -594,70 +599,83 @@ h2 {
   font-size: 2.6rem;
 }
 /* line 144, ../sass/style.scss */
-h2.gallery-head {
+h2.m-blog-head, h2.m-gallery-head {
   font-size: 13px;
   background: #282828;
-  color: white;
   text-transform: uppercase;
   padding: 2px 4px;
   font-weight: lighter;
   display: inline-block;
 }
+/* line 152, ../sass/style.scss */
+h2.m-blog-head a, h2.m-gallery-head a {
+  color: white;
+}
+/* line 154, ../sass/style.scss */
+h2.m-blog-head a:hover, h2.m-gallery-head a:hover {
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  /* line 142, ../sass/style.scss */
+  h2 {
+    font-size: 2rem;
+  }
+}
 
-/* line 155, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 h3 {
   font-size: 3rem;
 }
 
-/* line 159, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 h4 {
   font-size: 2.5rem;
 }
 
-/* line 163, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 h5 {
   font-size: 2rem;
 }
 
-/* line 167, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 h6 {
   font-size: 2rem;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 img {
   max-width: 100%;
 }
 
-/* line 175, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 a {
   color: #282828;
   text-decoration: none;
 }
-/* line 178, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 183, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .eyebrow {
   text-transform: uppercase;
   font-size: 13px;
 }
 
-/* line 188, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .site-footer {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .gallery-head a,
 .post-head a {
   color: white;
 }
 
-/* line 200, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .m-gallery-post-head,
 .m-blog-post-head {
   width: 100%;
@@ -665,7 +683,7 @@ a:hover {
   padding-bottom: 56.25%;
   position: relative;
 }
-/* line 206, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .m-gallery-post-head .m-gallery-post-image,
 .m-gallery-post-head .m-blog-post-image,
 .m-blog-post-head .m-gallery-post-image,
@@ -680,7 +698,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 footer.post-meta {
   font-size: 14px;
   line-height: 1;
