@@ -1,0 +1,28 @@
+$m : '.m-lede';
+
+#{$m} {
+  @include background-size (cover);
+  background-repeat: no-repeat;
+  #{$m}__inner {
+    padding: 20% 15px;
+    max-width: $max-width;
+    position: relative;
+    margin: 0 auto;
+  }
+  #{$m}__logo {
+    @include transition (all ease-in-out 0.3s);
+    background: $logo;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: block;
+    width: 160px;
+    height: 100px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
