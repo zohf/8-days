@@ -755,7 +755,7 @@ clear:both;
 }
 
 .homepage{
-    width: 1024px;
+    width: auto;
     margin-left: 10%;
     margin-right: 10%;
 }
