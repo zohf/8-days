@@ -322,6 +322,15 @@
   margin-top: 10px;
 }
 
+/* line 16, ../sass/modules/_m-loop.scss */
+.pagination {
+  color: #A5A5A5;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 12px;
+}
+
 /* line 17, ../sass/style.scss */
 article, aside, details,
 figcaption, figure,
