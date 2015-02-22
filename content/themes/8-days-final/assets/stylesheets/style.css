@@ -674,17 +674,29 @@ a:hover {
 
 /* line 197, ../sass/style.scss */
 .site-footer {
+  background: #282828;
+  padding: 20px 15px;
+  margin-top: 25px;
+  color: white;
+}
+/* line 202, ../sass/style.scss */
+.site-footer a {
+  color: white;
+}
+/* line 205, ../sass/style.scss */
+.site-footer section {
+  font-size: 14px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 .gallery-head a,
 .post-head a {
   color: white;
 }
 
-/* line 209, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .m-gallery-post-head,
 .m-blog-post-head {
   width: 100%;
@@ -692,7 +704,7 @@ a:hover {
   padding-bottom: 56.25%;
   position: relative;
 }
-/* line 215, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .m-gallery-post-head .m-gallery-post-image,
 .m-gallery-post-head .m-blog-post-image,
 .m-blog-post-head .m-gallery-post-image,
@@ -707,7 +719,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-/* line 228, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 footer.post-meta {
   font-size: 14px;
   line-height: 1;

@@ -195,8 +195,18 @@ a {
 }
 
 .site-footer {
-   max-width: $max-width;
-   margin: 0 auto;
+   background: $secondary;
+   padding: 20px 15px;
+   margin-top: 25px;
+   color: white;
+   a {
+      color: white;
+   }
+   section {
+      font-size: 14px;
+      max-width: $max-width;
+      margin: 0 auto;
+   }
 }
 
 .gallery-head,
