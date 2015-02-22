@@ -3,6 +3,7 @@ $m : '.m-lede';
 #{$m} {
   @include background-size (cover);
   background-repeat: no-repeat;
+  background-position: bottom center;
   #{$m}__inner {
     padding: 20% 15px;
     max-width: $max-width;

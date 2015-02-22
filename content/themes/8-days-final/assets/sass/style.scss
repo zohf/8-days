@@ -1,6 +1,9 @@
 //vars
 $logo: url('../images/logo.png');
 $max-width: 1000px;
+$break_large: 1000px;
+$break_medium: 800px;
+$break_small: 500px;
 
 @import 'compass';
 @import 'modules/m-row';
