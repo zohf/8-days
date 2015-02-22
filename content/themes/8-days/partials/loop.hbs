@@ -8,7 +8,7 @@
 <article class="{{post_class}} level-1">
     <header class="post-header pv-header">
         <div class="pv-image"
-             style="width:auto;height:400px;background:{{#if image}}url({{image}}){{else}}#ccc{{/if}};background-size:cover;">
+             style="background:{{#if image}}url({{image}}){{else}}#ccc{{/if}};background-size:cover;">
         </div>
     </header>
     <div class="pv-content">
@@ -26,6 +26,14 @@
         </footer>
     </div>
 </article>
+{{/foreach}}
+
+{{#foreach posts}}
+    {{#post}}
+      {{#has tag="gallery"}}
+        <p>{{tags}}</p>
+      {{/has}}
+    {{/post}}
 {{/foreach}}
 
 {{! Previous/next page links - displayed on every page }}

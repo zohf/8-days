@@ -1733,22 +1733,28 @@ display: none;
 }
 
 /* CUSTOM STYLES */
-
 .pv-image{
+    -webkit-transition: all ease-in-out .3s;
     width: inherit;
     height: inherit;
+    -webkit-filter: blur(.5px);
 }
 
 .pv-image:hover{
-    -webkit-transition: all ease-in-out .3s;
-    -webkit-filter: blur(2px);
+    -webkit-filter: blur(0px);
 }
 
 .pv-header{
+    width:auto;
+    height:200px;
+    background-color: #E6E6E6;
 }
 
 .pv-content{
-    min-height: 200px;
+    /*min-height: 200px;*/
+    min-height: 210px;
+    max-height: 220px;
+    overflow-y: hidden;
 }
 
 .pv-title {
@@ -1763,6 +1769,14 @@ display: none;
     color: black;
     opacity: .9;
     text-decoration: underline;
+}
+
+.author-posts {
+    margin: 10px 60px;
+}
+
+.poweredby{
+    display: none;
 }
 /* ==========================================================================
  12. Animations
