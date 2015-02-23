@@ -13,12 +13,7 @@
                 <div class="m-blog-post-content">
                     <h2 class="m-blog-post-title"><a href="{{url}}">{{{title}}}</a></h2>
                     <footer class="post-meta">
-                        {{#if author.image}}
-                        <div class="m-blog-author-thumb" style="background:url('{{author.image}}')">
-                        </div>
-                        {{/if}}
-                        {{author}}
-                        {{tags prefix=" posted in "}}
+                        by&nbsp;<span class="m-gallery-post-author">{{author}}</span>
                     </footer>
                 </div>
             </article>
@@ -41,12 +36,7 @@
                 <div class="m-gallery-post-content">
                     <h2 class="m-gallery-post-title"><a href="{{url}}">{{{title}}}</a></h2>
                     <footer class="post-meta">
-                        {{#if author.image}}
-                        <div class="m-gallery-author-thumb" style="background:url('{{author.image}}')">
-                        </div>
-                        {{/if}}
-                        {{author}}
-                        {{tags prefix=" posted in "}}
+                        by&nbsp;<span class="m-gallery-post-author">{{author}}</span>
                     </footer>
                 </div>
             </article>
