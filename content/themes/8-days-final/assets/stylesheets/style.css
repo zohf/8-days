@@ -331,7 +331,288 @@
   font-size: 12px;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 3, ../sass/modules/_m-post.scss */
+.m-post {
+  width: 80%;
+  max-width: 670px;
+  margin: 20px auto 0px auto;
+}
+/* line 7, ../sass/modules/_m-post.scss */
+.m-post-header {
+  width: 80%;
+  margin-bottom: 3.4rem;
+}
+/* line 14, ../sass/modules/_m-post.scss */
+.m-post-title {
+  margin-bottom: 0;
+  display: block;
+}
+/* line 18, ../sass/modules/_m-post.scss */
+.m-post-meta {
+  margin: 0;
+}
+/* line 21, ../sass/modules/_m-post.scss */
+.m-post-date {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+/* line 26, ../sass/modules/_m-post.scss */
+.m-post-main-nav {
+  max-width: 60px;
+  margin: 40px;
+  text-align: center;
+  background-color: black;
+  font-size: 13px;
+}
+/* line 32, ../sass/modules/_m-post.scss */
+.m-post-main-nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 38, ../sass/modules/_m-post.scss */
+.m-post-tag {
+  list-style: none;
+  margin: 2px;
+  padding: 0px 10px 0px 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  background-color: black;
+}
+/* line 46, ../sass/modules/_m-post.scss */
+.m-post-tag a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 52, ../sass/modules/_m-post.scss */
+.m-post-tags {
+  margin-left: 0;
+  -webkit-padding-start: 0;
+}
+/* line 56, ../sass/modules/_m-post.scss */
+.m-post-author {
+  margin: 10px 0px 10px 0px;
+}
+/* line 59, ../sass/modules/_m-post.scss */
+.m-post-date {
+  font-size: 13px;
+}
+
+/* Stop .full-img from creating horizontal scroll - slight hack due to
+imperfections with browser width % calculations and rounding */
+/* line 66, ../sass/modules/_m-post.scss */
+.post-template .content {
+  overflow: hidden;
+}
+
+/* Tweak the .post wrapper style */
+/* line 71, ../sass/modules/_m-post.scss */
+.post-template .post {
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Kill that stylish little circle that was on the border, too */
+/* line 78, ../sass/modules/_m-post.scss */
+.post-template .post:after {
+  display: none;
+}
+
+/* Keep images centred and within the bounds of the post-width */
+/* line 83, ../sass/modules/_m-post.scss */
+.post-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0.6em 0;
+}
+
+/* Break out larger images to be wider than the main text column
+the class is applied with jQuery */
+/* line 93, ../sass/modules/_m-post.scss */
+.post-content .full-img {
+  width: 126%;
+  max-width: none;
+  margin: 0 -13%;
+}
+
+/* The author credit area after the post */
+/* line 100, ../sass/modules/_m-post.scss */
+.post-footer {
+  position: relative;
+  margin: 6rem 0 0 0;
+  padding: 6rem 0 0 0;
+  border-top: #EBF2F6 1px solid;
+}
+
+/* line 107, ../sass/modules/_m-post.scss */
+.post-footer h4 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* line 112, ../sass/modules/_m-post.scss */
+.post-footer p {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  line-height: 1.75em;
+}
+
+/* list of author links - location / url */
+/* line 119, ../sass/modules/_m-post.scss */
+.author-meta {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  font-style: italic;
+  color: #9EABB3;
+}
+
+/* line 129, ../sass/modules/_m-post.scss */
+.author-meta a {
+  color: #9EABB3;
+}
+
+/* line 132, ../sass/modules/_m-post.scss */
+.author-meta a:hover {
+  color: #111;
+}
+
+/* Create some space to the right for the share links */
+/* line 137, ../sass/modules/_m-post.scss */
+.post-footer .author {
+  margin-right: 180px;
+}
+
+/* line 141, ../sass/modules/_m-post.scss */
+.post-footer h4 a {
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+/* line 146, ../sass/modules/_m-post.scss */
+.post-footer h4 a:hover {
+  text-decoration: underline;
+}
+
+/* Drop the share links in the space to the right.
+ Doing it like this means it's easier for the author bio
+ to be flexible at smaller screen sizes while the share
+ links remain at a fixed width the whole time */
+/* line 154, ../sass/modules/_m-post.scss */
+.post-footer .share {
+  position: absolute;
+  top: 6rem;
+  right: 0;
+  width: 140px;
+}
+
+/* line 161, ../sass/modules/_m-post.scss */
+.post-footer .share a {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin: 1rem 1.6rem 1.6rem 0;
+  color: #BBC7CC;
+  text-decoration: none;
+}
+
+/* line 169, ../sass/modules/_m-post.scss */
+.post-footer .share a:hover {
+  color: #50585D;
+}
+
+/* The subscribe icon on the footer */
+/* line 174, ../sass/modules/_m-post.scss */
+.subscribe {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  margin-left: -15px;
+  border: #EBF2F6 1px solid;
+  text-align: center;
+  line-height: 2.4rem;
+  border-radius: 50px;
+  background: #FFF;
+  transition: box-shadow 0.5s;
+}
+
+/* The RSS icon, inserted via icon font */
+/* line 190, ../sass/modules/_m-post.scss */
+.subscribe:before {
+  color: #D2DEE3;
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  font-weight: 700;
+  transition: color 0.5s ease;
+}
+
+/* Add a box shadow to on hover */
+/* line 201, ../sass/modules/_m-post.scss */
+.subscribe:hover {
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 3px;
+  transition: box-shadow 0.25s;
+}
+
+/* line 206, ../sass/modules/_m-post.scss */
+.subscribe:hover:before {
+  color: #50585D;
+}
+
+/* CSS tooltip saying "Subscribe!" - initially hidden */
+/* line 211, ../sass/modules/_m-post.scss */
+.tooltip {
+  opacity: 0;
+  display: block;
+  width: 53px;
+  padding: 4px 8px 5px 8px;
+  position: absolute;
+  top: -23px;
+  left: -21px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1em;
+  text-align: center;
+  background: #50585D;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+/* The little chiclet arrow under the tooltip, pointing down */
+/* line 230, ../sass/modules/_m-post.scss */
+.tooltip:after {
+  content: " ";
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: #50585D transparent;
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  margin-left: -5px;
+  z-index: 220;
+  width: 0;
+}
+
+/* On hover, show the tooltip! */
+/* line 245, ../sass/modules/_m-post.scss */
+.subscribe:hover .tooltip {
+  opacity: 1;
+  top: -33px;
+}
+
+/* line 18, ../sass/style.scss */
 article, aside, details,
 figcaption, figure,
 footer, header, hgroup,
@@ -340,106 +621,106 @@ summary {
   display: block;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 audio, canvas, video {
   display: inline-block;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 24, ../sass/style.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 [hidden], template {
   display: none;
 }
 
-/* line 25, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 body {
   margin: 0;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 a {
   background: transparent;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 a:active, a:hover {
   outline: 0;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 b, strong {
   font-weight: 700;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 mark {
   background: #FF0;
   color: #000;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 code, kbd, pre,
 samp {
   font-family: monospace, serif;
   font-size: 1em;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 pre {
   white-space: pre-wrap;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 48, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 small {
   font-size: 80%;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -447,45 +728,45 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 img {
   border: 0;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 figure {
   margin: 0;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 66, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 button, input, select,
 textarea {
   font-family: inherit;
@@ -493,36 +774,36 @@ textarea {
   margin: 0;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 button, input {
   line-height: normal;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 button, select {
   text-transform: none;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 button, html input[type="button"],
 input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 button[disabled], html input[disabled] {
   cursor: default;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -530,32 +811,32 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 89, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 html {
   height: 100%;
   max-height: 100%;
@@ -563,7 +844,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 body {
   height: 100%;
   max-height: 100%;
@@ -577,17 +858,17 @@ body {
   -o-font-feature-settings: 'kern' 1;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 ::-moz-selection {
   background: #D6EDFF;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 ::selection {
   background: #D6EDFF;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 h1, h2, h3,
 h4, h5, h6 {
   -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
@@ -599,24 +880,24 @@ h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 h1 {
   font-size: 5rem;
   letter-spacing: -2px;
   text-indent: -3px;
 }
 @media (max-width: 800px) {
-  /* line 133, ../sass/style.scss */
+  /* line 134, ../sass/style.scss */
   h1 {
     font-size: 3.5rem;
   }
 }
 
-/* line 142, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 h2 {
   font-size: 2.6rem;
 }
-/* line 144, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 h2.m-blog-head, h2.m-gallery-head {
   font-size: 13px;
   background: #282828;
@@ -625,87 +906,87 @@ h2.m-blog-head, h2.m-gallery-head {
   font-weight: lighter;
   display: inline-block;
 }
-/* line 152, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 h2.m-blog-head a, h2.m-gallery-head a {
   color: white;
 }
-/* line 154, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 h2.m-blog-head a:hover, h2.m-gallery-head a:hover {
   text-decoration: none;
 }
 @media (max-width: 800px) {
-  /* line 142, ../sass/style.scss */
+  /* line 143, ../sass/style.scss */
   h2 {
     font-size: 2rem;
   }
 }
 
-/* line 164, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 h3 {
   font-size: 3rem;
 }
 
-/* line 168, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 h4 {
   font-size: 2.5rem;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 h5 {
   font-size: 2rem;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 h6 {
   font-size: 2rem;
 }
 
-/* line 180, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 img {
   max-width: 100%;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 a {
   color: #282828;
   text-decoration: none;
 }
-/* line 187, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 192, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .eyebrow {
   text-transform: uppercase;
   font-size: 13px;
 }
 
-/* line 197, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .site-footer {
   background: #282828;
   padding: 20px 15px;
   margin-top: 25px;
   color: white;
 }
-/* line 202, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .site-footer a {
   color: white;
 }
-/* line 205, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .site-footer section {
   font-size: 14px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 214, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .gallery-head a,
 .post-head a {
   color: white;
 }
 
-/* line 219, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .m-gallery-post-head,
 .m-blog-post-head {
   width: 100%;
@@ -713,7 +994,7 @@ a:hover {
   padding-bottom: 56.25%;
   position: relative;
 }
-/* line 225, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .m-gallery-post-head .m-gallery-post-image,
 .m-gallery-post-head .m-blog-post-image,
 .m-blog-post-head .m-gallery-post-image,
@@ -728,7 +1009,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-/* line 238, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 footer.post-meta {
   font-size: 14px;
   line-height: 1;
